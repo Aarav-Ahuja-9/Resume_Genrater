@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Tagesschrift&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+
 :root {
     --blue: #7AC6D2;
     --dark-grey: #124747;
@@ -27,6 +29,7 @@ h1 {
     margin: .5rem 0;
     color: var(--dark-grey);
     font-weight: 370;
+    font-family: 'Winky Sans', sans-serif;
 }
 
 body p {
@@ -34,14 +37,15 @@ body p {
     font-size: 1.5rem;
     margin-bottom: .9rem;
     color: var(--dark-grey);
+    font-family: 'Winky Sans', sans-serif;
 }
 
 form {
     display: flex;
     justify-content: space-between;    
     background: var(--Skin);  
-    width: 65%;  
-    padding: 1.5rem 4rem;
+    width: 75%;  
+    padding: 1.5rem 2rem;
     border-radius: 1rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.575);  
     margin: 1.5rem 0 4rem 0;                        
@@ -55,8 +59,9 @@ form div h2 {
 
 form div label h4 {
     font-size: 1.2rem;
-    color: #f7e6e6, #1b1b1bcb;
+    color: #1b1b1bcb;
     margin-bottom: .9rem;
+    font-family: 'Comic Relief', sans-serif;
 }
 
 form .Personal_Details label {
@@ -92,7 +97,7 @@ form .professional_details label {
     background: var(--light-grey);
     padding: .5rem;
     border-radius: .4rem;
-    width: 17rem;
+    width: 19rem;
 }
 
 form .professional_details label textarea {
@@ -100,6 +105,7 @@ form .professional_details label textarea {
     border: .8px solid var(--super-dark-grey);
     border-radius: .4rem;
     width: 95%;
+    max-width: 95%;
 }
 
 form .professional_details label textarea:focus {
@@ -111,3 +117,16 @@ form .professional_details label textarea::placeholder {
     color: var(--super-dark-grey);
 }
 
+form .professional_details h3 {
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    color: var(--super-dark-grey);
+    font-weight: 400;
+}
+
+form .Personal_Details h3 {
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    color: var(--super-dark-grey);
+    font-weight: 400;
+}
