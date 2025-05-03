@@ -6,6 +6,7 @@
     --super-dark-grey: #222831;
     --Skin: #f7e7cd;
     --light-grey: #9da59d9c;
+    --white: #ffffffec;
 }
 
 
@@ -54,7 +55,12 @@ form {
 form div h2 {
     font-size: 1.5rem;
     color: var(--super-dark-grey);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    background: var(--light-grey);
+    padding: .6rem .8rem;
+    color: var(--dark-grey);
+    border-radius: 2rem;
+    font-family: 'Winky Sans', sans-serif;
 }
 
 form div label h4 {
@@ -79,6 +85,9 @@ form .Personal_Details label input {
     border: .8px solid var(--super-dark-grey);
     border-radius: .4rem;
     width: 95%;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: var(--white);
+    font-size: 1rem;
 }
 
 form .Personal_Details label input:focus {
@@ -106,6 +115,9 @@ form .professional_details label textarea {
     border-radius: .4rem;
     width: 95%;
     max-width: 95%;
+    background: var(--white);
+    font-size: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 form .professional_details label textarea:focus {
@@ -122,6 +134,7 @@ form .professional_details h3 {
     font-size: 1.5rem;
     color: var(--super-dark-grey);
     font-weight: 400;
+    font-family: 'Tagesschrift', sans-serif;
 }
 
 form .Personal_Details h3 {
@@ -129,4 +142,104 @@ form .Personal_Details h3 {
     font-size: 1.5rem;
     color: var(--super-dark-grey);
     font-weight: 400;
+    font-family: 'Tagesschrift', sans-serif;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Devices (Portrait - up to 575px) */
+@media (max-width: 575.98px) {
+    form {
+      flex-direction: column;
+      align-items: left;
+      width: 75%;
+      padding: 1rem;
+    }
+  
+    form .Personal_Details label,
+    form .professional_details label {
+      width: 100%;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    body p {
+      font-size: 1.1rem;
+    }
+  
+    form div h2,
+    form div label h4,
+    form .Personal_Details h3,
+    form .professional_details h3 {
+      text-align: center;
+      font-size: 1rem;
+    }
+  }
+  
+  /* Tablets (Portrait & Landscape) - from 576px up to 1024px */
+  @media (min-width: 576px) and (max-width: 1024px) {
+    form {
+      width: 75%;
+      padding: 1rem;
+    }
+  
+    form .Personal_Details label,
+    form .professional_details label {
+      width: 100%;
+    }
+  
+    h1 {
+      font-size: 2.3rem;
+    }
+  
+    body p {
+      font-size: 1.3rem;
+    }
+  
+    form div h2,
+    form div label h4,
+    form .Personal_Details h3,
+    form .professional_details h3 {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  }
+  
+  /* Small Desktops and Large Tablets Landscape (1025px - 1200px) */
+  @media (min-width: 1025px) and (max-width: 1400px) {
+    form {
+      width: 60%;
+    }
+  
+    form .Personal_Details label {
+      width: 14rem;
+    }
+  
+    form .professional_details label {
+      width: 17rem;
+    }
+  
+    h1 {
+      font-size: 2.4rem;
+    }
+  
+    body p {
+      font-size: 1.4rem;
+    }
+  }
+  
