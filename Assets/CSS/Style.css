@@ -1,0 +1,80 @@
+:root {
+    --blue: #7AC6D2;
+    --dark-grey: #124747;
+    --super-dark-grey: #222831;
+    --light-yellow: #DFD0B8;
+    --light-grey: #9da59d9c;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+body {
+    background: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: .5rem 0;
+    color: var(--dark-grey);
+    font-weight: 200;
+}
+
+body p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: .9rem;
+    color: var(--dark-grey);
+}
+
+form {
+    display: flex;
+    justify-content: space-between;    
+    background: var(--light-yellow);  
+    width: 65%;  
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.575);  
+    margin: 1.5rem 0 4rem 0;                        
+}
+
+form div h2 {
+    font-size: 1.5rem;
+    color: var(--super-dark-grey);
+    margin-bottom: 1rem;
+}
+
+form div label h4 {
+    font-size: 1.2rem;
+    color: #f7e6e6, #1b1b1bcb;
+    margin-bottom: .9rem;
+}
+
+form .Personal_Details label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    background: var(--light-grey);
+    padding: .5rem;
+    border-radius: .4rem;
+}
+
+form .Personal_Details label input {
+    padding: .3rem;
+    border: .8px solid var(--super-dark-grey);
+    border-radius: .4rem;
+}
+
+form .Personal_Details label input:focus {
+    outline: none;
+    border: .8px solid var(--super-dark-grey);
+}
