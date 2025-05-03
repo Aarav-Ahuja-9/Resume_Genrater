@@ -2,7 +2,7 @@
     --blue: #7AC6D2;
     --dark-grey: #124747;
     --super-dark-grey: #222831;
-    --light-yellow: #DFD0B8;
+    --Skin: #f7e7cd;
     --light-grey: #9da59d9c;
 }
 
@@ -26,7 +26,7 @@ h1 {
     font-size: 2.5rem;
     margin: .5rem 0;
     color: var(--dark-grey);
-    font-weight: 200;
+    font-weight: 370;
 }
 
 body p {
@@ -39,9 +39,9 @@ body p {
 form {
     display: flex;
     justify-content: space-between;    
-    background: var(--light-yellow);  
+    background: var(--Skin);  
     width: 65%;  
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 4rem;
     border-radius: 1rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.575);  
     margin: 1.5rem 0 4rem 0;                        
@@ -66,15 +66,48 @@ form .Personal_Details label {
     background: var(--light-grey);
     padding: .5rem;
     border-radius: .4rem;
+    width: 16rem;
 }
 
 form .Personal_Details label input {
     padding: .3rem;
     border: .8px solid var(--super-dark-grey);
     border-radius: .4rem;
+    width: 95%;
 }
 
 form .Personal_Details label input:focus {
     outline: none;
     border: .8px solid var(--super-dark-grey);
 }
+
+form .Personal_Details label input::placeholder {
+    color: var(--super-dark-grey);
+}
+
+form .professional_details label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    background: var(--light-grey);
+    padding: .5rem;
+    border-radius: .4rem;
+    width: 17rem;
+}
+
+form .professional_details label textarea {
+    padding: .3rem;
+    border: .8px solid var(--super-dark-grey);
+    border-radius: .4rem;
+    width: 95%;
+}
+
+form .professional_details label textarea:focus {
+    outline: none;
+    border: .8px solid var(--super-dark-grey);
+}
+
+form .professional_details label textarea::placeholder {
+    color: var(--super-dark-grey);
+}
+
