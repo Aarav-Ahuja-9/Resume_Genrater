@@ -154,14 +154,34 @@ form button {
   border-radius: .4rem;
   outline: none;
   border: .1rem solid var(--super-dark-grey);
+  background: #32d38a;
+  color: var(--super-dark-grey);
+  font-family: 'winky sans', sans-serif;
+  font-size: 1rem;
 }
 
 form div label input::placeholder {
   text-transform: capitalize;
 }
 
+form label div {
+  background: white;
+  height: 9rem;
+  width: 95%;
+  border: .8px solid var(--super-dark-grey);
+  border-radius: 1rem;
+}
 
+form label div p i {
+  margin-top: 1.3rem;
+  font-size: 2rem;
+}
 
+form label div p {
+  font-size: 1rem;
+  color: var(--super-dark-grey);
+  font-family: 'Comic Relief', sans-serif;
+}
 
 
 
@@ -185,6 +205,19 @@ form div label input::placeholder {
     form .Personal_Details label,
     form .professional_details label {
       width: 100%;
+    }
+
+    form button span {
+      display: none;
+    }
+
+    form button {
+      width: 2.5rem;
+      height: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5rem;
     }
   
     h1 {

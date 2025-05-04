@@ -13,9 +13,18 @@
     <p>by aarav ahuja</p>
 
     <form action="">
-        <button type="submit"><i class="fa-light fa-memo-circle-check"></i> <span>submit</span> </button>
+        <button type="submit" class="TopSubmit"><i class="fa-light fa-memo-circle-check"></i> <span>submit</span> </button>
         <div class="Personal_Details">
             <h2>personal details :-</h2>
+
+            <label for="ImageInput">
+                <h4>Profile Image :-</h4>
+                <div>
+                    <p><i class="fa-light fa-cloud-arrow-up"></i></p>
+                    <p>Select Image Or Drag & Drop</p>
+                </div>
+                <input type="file" id="ImageInput" accept="image/*" required hidden>
+            </label>
 
             <Label for="NameInput">
                 <h4>Full Name :-</h4>
@@ -139,6 +148,8 @@
                 <h4>Internships Summary :-</h4>
                 <textarea placeholder="Enter your internships summary" id="InternshipsInput" rows="4"></textarea>
             </label>
+
+            <button type="submit"> <i class="fa-light fa-memo-circle-check"></i> submit</button>
         </div>
     </form>
 
