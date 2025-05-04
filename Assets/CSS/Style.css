@@ -145,16 +145,16 @@ form .Personal_Details h3 {
     font-family: 'Tagesschrift', sans-serif;
 }
 
-form button {
+form .TopSubmit {
   height: 3rem;
-  width: 5rem;
+  width: 5.5rem;
   position: absolute;
   top: .8rem;
   left: .8rem;
   border-radius: .4rem;
   outline: none;
   border: .1rem solid var(--super-dark-grey);
-  background: #32d38a;
+  background: var(--Skin);
   color: var(--super-dark-grey);
   font-family: 'winky sans', sans-serif;
   font-size: 1rem;
@@ -165,7 +165,7 @@ form div label input::placeholder {
 }
 
 form label div {
-  background: white;
+  background: var(--white);
   height: 9rem;
   width: 95%;
   border: .8px solid var(--super-dark-grey);
@@ -183,8 +183,26 @@ form label div p {
   font-family: 'Comic Relief', sans-serif;
 }
 
+form button:last-child {
+  background: var(--light-grey);
+  outline: none;
+  border: .8px solid var(--super-dark-grey);
+  border-radius: .5rem;
+  width: 40%;
+  height: 4rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 1rem;
+}
 
+form button:last-child i {
+  margin-right: .5rem;
+}
 
+form .professional_details label:last-child {
+  background: transparent;
+  align-items: center;
+  margin-top: 1rem;
+}
 
 
 
@@ -211,13 +229,22 @@ form label div p {
       display: none;
     }
 
-    form button {
+    form button:first-child {
       width: 2.5rem;
       height: 2.5rem;
       display: flex;
       align-items: center;
       justify-content: center;
       border-radius: 5rem;
+    }
+    
+    form button:first-child i {
+      font-size: 1.2rem;
+      margin-left: .7rem;
+    }
+
+    form button:last-child {
+      width: 60%;
     }
   
     h1 {
