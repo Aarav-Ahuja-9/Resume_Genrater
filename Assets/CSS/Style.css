@@ -145,7 +145,20 @@ form .Personal_Details h3 {
     font-family: 'Tagesschrift', sans-serif;
 }
 
+form button {
+  height: 3rem;
+  width: 5rem;
+  position: absolute;
+  top: .8rem;
+  left: .8rem;
+  border-radius: .4rem;
+  outline: none;
+  border: .1rem solid var(--super-dark-grey);
+}
 
+form div label input::placeholder {
+  text-transform: capitalize;
+}
 
 
 
@@ -216,7 +229,6 @@ form .Personal_Details h3 {
     form .Personal_Details h3,
     form .professional_details h3 {
       font-size: 1.2rem;
-      text-align: center;
     }
   }
   
